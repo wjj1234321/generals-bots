@@ -52,7 +52,7 @@ class PettingZooGenerals(pettingzoo.ParallelEnv):
 
         # Agents
         self.agents = agents
-        self.colors = [(2, 107, 108), (0, 10, 255)]
+        self.colors = [(255, 107, 108), (0, 130, 255)]
         self.agent_data = {id: {"color": color} for id, color in zip(agents, self.colors)}
         self.possible_agents = self.agents
 

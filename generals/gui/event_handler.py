@@ -31,7 +31,7 @@ class ReplayCommand(Command):
     def __init__(self):
         super().__init__()
         self.frame_change: int = 0
-        self.speed_change: float = 10
+        self.speed_change: float = 1.0
         self.restart: bool = False
         self.pause_toggle: bool = False
 

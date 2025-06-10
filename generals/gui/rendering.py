@@ -191,8 +191,7 @@ class Renderer:
         for agent in agents:
             ownership = self.game.channels.ownership[agent]
             visible_ownership = np.logical_and(ownership, visible_map)
-            self.draw_channel(visible_ownership, (30,30,30))
-            '''self.agent_data[agent]["color"]'''
+            self.draw_channel(visible_ownership, self.agent_data[agent]["color"])
 
         # Draw visible generals
         visible_generals = np.logical_and(self.game.channels.generals, visible_map)
